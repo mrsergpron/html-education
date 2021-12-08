@@ -1,0 +1,60 @@
+/* input {
+  border: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+input:focus {
+  background-color: cadetblue;
+}
+input:valid {
+  border: none;
+} */
+
+form {
+  display: inline-block;
+  box-sizing: border-box;
+}
+fieldset {
+  border: none;
+}
+legend {
+  font-size: 20px;
+  font-weight: bold;
+}
+input {
+  border: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+input:hover {
+  background-color: #f2f2f2;
+}
+input:focus {
+  background-color: #ccc;
+}
+input:active {
+  background-color: none;
+}
+
+input:valid {
+  border-bottom: none;
+}
+input:invalid {
+  background-color: blue;
+}
+input:required {
+  background-color: red;
+}
+
+input:checked + span {
+  background: #fc0;
+}
+
+textarea {
+  border: none;
+  font-size: 16px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+}

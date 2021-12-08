@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="image.css">
+
+    <title>Images</title>
+</head>
+
+<body>
+
+    <!-- графический редактор krita-rus.ru -->
+    <!-- сжать изображение tinypng.com -->
+    <!-- таблица символов unicode-table.com/ru U+2606  	&#9734;-->
+    <!-- иконки fontawesome.com -->
+
+
+    <h2>Адаптивное изображение</h2>
+
+    <div class="container">
+
+        <img src="img/news1.jpg" alt="описаний фото">
+
+    </div>
+
+    <h2>Стили для изображения</h2>
+
+    <p>Прозрачность</p>
+    <div class="container1">
+        <img src="img/news1.jpg" alt="описаний фото">
+
+    </div>
+
+    <p>Черно-белое</p>
+    <div class="container2">
+        <img src="img/news1.jpg" alt="описаний фото">
+
+    </div>
+
+    <p>Черно-белое</p>
+    <div class="container3">
+        <img src="img/news1.jpg" alt="описаний фото">
+
+    </div>
+    <p>Черно-белое</p>
+    <div class="container4">
+        <img src="img/news1.jpg" alt="описаний фото">
+
+    </div>
+
+    <p>Размытие</p>
+    <div class="container5">
+        <img src="img/news1.jpg" alt="описаний фото">
+
+    </div>
+
+    <p>Контраст</p>
+    <div class="container6">
+        <img src="img/news1.jpg" alt="описаний фото">
+
+    </div>
+
+    <p>Яркость</p>
+    <div class="container7">
+        <img src="img/news1.jpg" alt="описаний фото">
+
+    </div>
+
+    <p>Яркость</p>
+    <div class="container8">
+        <img src="img/news1.jpg" alt="описаний фото">
+
+    </div>
+
+    <p>Плавность</p>
+    <div class="container9">
+        <img src="img/news1.jpg" alt="описаний фото">
+
+    </div>
+
+    <p>Разворот цветности</p>
+    <div class="container10">
+        <img src="img/news1.jpg" alt="описаний фото">
+
+    </div>
+
+    <p>Тень</p>
+    <div class="container11">
+        <img src="img/news1.jpg" alt="описаний фото">
+    </div>
+
+    <p>Два фильтра</p>
+    <div class="container12">
+        <img src="img/news1.jpg" alt="описаний фото">
+
+    </div>
+
+    <h2>Подключение svg изображения</h2>
+
+    <img src="img/fb.svg" alt="fb" style="width: 1%;">
+    <br>
+
+    <svg>
+        <use xlink:href="img/symbol/sprite.svg#heart"></use>
+    </svg>
+
+    <h2>Подключение нескольких изображений</h2>
+    <!-- если нет первого изображения будет подключено второе и т.д. -->
+
+    <picture>
+        <!-- <source type="image/webp" srcset="img/1.webp"> -->
+        <source type="image/jpeg" srcset="img/news1.jpg">
+        <img src="img/ul_icon.jpg" alt="">
+    </picture>
+
+
+    <h2>Адаптация изображения в зависимости от размера экрана</h2>
+    <!-- при размере 1001px будет подключено это изображение img/ul_icon.jpg -->
+
+    <picture>
+        <!-- <source type="image/webp" srcset="img/1.webp"> -->
+        <source media="(max-width:1000px)" type="image/jpeg" srcset="img/news1.jpg">
+        <img src="img/ul_icon.jpg" alt="">
+    </picture>
+    <br>
+
+    <h3>В зависимости от размера экрана</h3>
+    <!-- в зависимости от размера экрана -->
+    <img src="img/img-400.jpg" alt="" srcset="img/img-400.jpg 400w,
+    img/img-800.jpg 800w,
+    img/img-full.jpg 1400w">
+
+
+    <br>
+
+    <picture>
+        <source media="(max-width:500px)" type="image/jpeg" srcset="img/img-400.jpg">
+        <source media="(max-width:1000px)" type="image/jpeg" srcset="img/img-800.jpg">
+        <img src="img/img-full.jpg" alt="">
+    </picture>
+
+
+    <br>
+
+
+    <!-- в зависимости от размера экрана до 480px 50% >480px 100% -->
+    <img sizes="(max-width:480px) 50vw, 100vw" src="img/img-800.jpg" alt="">
+
+    <br><br>
+
+    <h3>В зависимости от плотности экрана retina (dpr:1 dpr:2 dpr:3)</h3>
+    <!-- в зависимости от плотности экрана retina-->
+    <!-- dpr:1  dpr:2  dpr:3 -->
+    <p>dpi кол-во точек на дюйм (2,54см)</p>
+    <p>1дюйм = 96px = 2.54см</p>
+    <p>1 = 96 dpi</p>
+    <p>2 = 192 dpi</p>
+    <p>3 = 288 dpi</p>
+
+    <h3>Двухкратное изображение для больших экранов retina</h3>
+    <p>dppx - кол-во точек на пиксель</p>
+
+    <img src="img/img-400.jpg" alt="" srcset="
+    img/img-800.jpg 2x,
+    img/img-full.jpg 3x">
+
+    <br>
+
+
+    <h3>Медиа запросы</h3>
+
+    <div class="block"></div>
+
+    <p>ориентация portait где высота > ширины</p>
+    <div class="portrait"></div>
+
+
+    <p>ориентация landscape где ширина > высоты</p>
+    <div class="landscape"></div>
+
+    <h3>Изображение, как фон</h3>
+    <div class="fon"></div>
+
+</body>
+
+</html>

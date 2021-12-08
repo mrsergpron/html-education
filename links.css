@@ -1,0 +1,80 @@
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+  text-transform: lowercase;
+  opacity: 0.7;
+  text-shadow: #000 1px 1px 10px;
+  text-align: center;
+  vertical-align: top;
+}
+a:hover {
+  color: blue;
+  border-bottom: none;
+}
+a:active {
+  color: red;
+}
+a:visited {
+  color: #000;
+}
+
+a:visited:hover {
+  color: blue;
+}
+a:visited:active {
+  color: red;
+}
+
+/* иконка до и после ссылки */
+a::before {
+  content: "@";
+  font-family: fontAwesome;
+}
+a::after {
+  content: "\2706";
+  font-family: fontAwesome;
+}
+
+/* стили при выделении ссылки */
+a::selection {
+  background-color: darkslategrey;
+  color: white;
+}
+
+/* стили для ссылок с target */
+a[target] {
+  color: green;
+}
+/* стили для всех ссылок кроме с target */
+a:not([target]) {
+  font-size: 25px;
+}
+/* стили для ссылок с href */
+a[href="https://mail.ru/"]
+{
+  font-size: 50px;
+}
+/* стили для всех ссылок кроме с href  */
+a:not([href="https://mail.ru/"])
+{
+  font-size: 25px;
+}
+/* стили для ссылок с классом google  */
+a.google {
+  color: brown;
+}
+
+a.google:hover {
+  color: orchid;
+}
+/* стили для ссылок кроме с классом google  */
+a:not(.google) {
+  color: #000;
+}

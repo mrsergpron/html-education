@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактная форма HTML</title>
+
+    <link rel="stylesheet" type="text/css" href="form.css">
+
+
+    <!-- иконки fontawesome.com -->
+    <script src="https://kit.fontawesome.com/9374e0dc51.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <!--     
+    method="GET" method="POST" -->
+    <!-- placeholder="Ваше имя" текст в поле input-->
+    <!-- autofocus выделяет поле input-->
+    <!-- required обязательно к заполнению-->
+    <!-- value  введет текст в поле input-->
+
+    <form method="GET" action="" enctype="multipart/form-data">
+
+        <fieldset>
+
+            <legend>Контакты</legend>
+
+            <label for="name">Имя:</label><br>
+            <input type="text" name="name" id="name" class="form_input" placeholder="Ваше имя" autofocus value="Сергей"
+                required>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" class="form_input" placeholder="Ваш email">
+            <label for="text">Текст:</label><br>
+            <textarea name="text" id="text" col="0" row="0" placeholder="Ваше сообщение"></textarea><br>
+            <label>Обработка персональных данных
+                <input type="checkbox" />
+                <span>Да</span>
+            </label><br>
+            <label>Apples
+                <input type="radio" name="fruit" checked />
+                <span>Да</span>
+            </label><br>
+
+            <select name="animal">
+                <option value="lion">Lion</option>
+                <option value="tiger">Tiger</option>
+                <option value="leopard">Leopard</option>
+            </select><br><br>
+
+            <select name="lang[]" multiple="">
+                <option value="eng">English</option>
+                <option value="rus">Russian</option>
+                <option value="jp">Japan</option>
+            </select><br><br>
+
+            <label for="file">Загрузить файл</label><br>
+            <input type="file" name="file" id="file"><br>
+
+            <input type="submit" value="Отправить"><br>
+            <button type="submit" aria-label="кнопка отправить"><i class="far fa-envelope"></i></button>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "roboto_condensedregular";
+  src: url("../fonts/robotocondensed-regular-webfont.woff2") format("woff2"),
+    url("../fonts/robotocondensed-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto_condensedbold";
+  src: url("../fonts/robotocondensed-bold-webfont.woff2") format("woff2"),
+    url("../fonts/robotocondensed-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto_condensedbold_italic";
+  src: url("../fonts/robotocondensed-bolditalic-webfont.woff2") format("woff2"),
+    url("../fonts/robotocondensed-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto_condenseditalic";
+  src: url("../fonts/robotocondensed-italic-webfont.woff2") format("woff2"),
+    url("../fonts/robotocondensed-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto_condensedlight_italic";
+  src: url("../fonts/robotocondensed-lightitalic-webfont.woff2") format("woff2"),
+    url("../fonts/robotocondensed-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto_condensedlight";
+  src: url("../fonts/robotocondensed-light-webfont.woff2") format("woff2"),
+    url("../fonts/robotocondensed-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* генератор шрифтов fontsquirrel.com берем форматы woff/woff2 */
+
+/* fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+  /* list-style-image: url("img/ul_icon.jpg"); */
+}
+
+.text {
+  display: block;
+  width: 250px;
+  height: 50px;
+  overflow: hidden;
+}
+.text2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  color: #000;
+  text-decoration: underline;
+  text-transform: lowercase;
+  opacity: 0.7;
+  text-shadow: #000 1px 1px 10px;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* первая буква */
+.text2::first-letter {
+  color: red;
+  font-size: 20px;
+}
+
+/* выделение текста */
+.text2::selection {
+  background-color: cadetblue;
+  color: #fff;
+}
+
+/* иконки fontawesome.com */
+.fa-android {
+  font-size: 50px;
+  color: #333;
+  cursor: pointer;
+}

@@ -1,0 +1,141 @@
+.container {
+  display: inline-block;
+  width: 400px;
+  height: 200px;
+  padding: 1%;
+  border: 1px solid #ccc;
+}
+
+/* адаптивность */
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* СТИЛИ */
+
+/* прозрачность 0- 100% */
+.container1 img {
+  filter: opacity(25%);
+}
+
+/* черно-белое 0- 100% */
+.container2 img {
+  filter: sepia(100%);
+}
+
+/* черно-белое 0- 100% */
+.container3 img {
+  filter: grayscale(100%);
+}
+
+/* черно-белое 0- 100% */
+.container4 img {
+  filter: invert(46%);
+}
+
+/* размытие px */
+.container5 img {
+  filter: blur(5px);
+}
+
+/* контраст 0- 100%  */
+.container6 img {
+  filter: contrast(30%);
+}
+
+/* яркость 0-  */
+.container7 img {
+  filter: brightness(150%);
+}
+
+/* яркость 0-   */
+.container8 img {
+  filter: saturate(200%);
+}
+
+/* плавность */
+.container9 img {
+  transition: 1s;
+}
+
+/* разворот цветности 0 - 360 deg*/
+.container10 img {
+  filter: hue-rotate(120 deg);
+}
+
+/* тень */
+.container11 img {
+  filter: drop-shadow(10px 10px 20px #000);
+}
+
+/* два фильтра */
+.container12 img {
+  filter: opacity(50%) blur(5px);
+}
+
+.svg {
+  fill: yellow;
+}
+
+/* изображение, как фон */
+.fon {
+  width: 700px;
+  height: 500px;
+  background: url("img/img-400.jpg") no-repeat top center;
+  background-size: 50%;
+  background-size: cover;
+}
+
+/* Медиа запросы */
+
+/* All для свех типов */
+/* , или */
+/* and - и*/
+/* not  - не */
+
+@media (min-resolution: 2dppx), (max-width: 400px) {
+  .block {
+    width: 500px;
+    height: 500px;
+    background-image: url("img/img-400.jpg");
+  }
+}
+
+/* ориентация portrait */
+/* где высота > ширины */
+@media (orientation: portrait) {
+  .portrait {
+    width: 400px;
+    height: 500px;
+    background-image: url("img/img-400.jpg");
+  }
+}
+
+/* ориентация landscape */
+/* где ширина > высоты */
+@media (orientation: landscape) {
+  .landscape {
+    width: 500px;
+    height: 300px;
+    background-image: url("img/img-400.jpg");
+  }
+}
+
+/* соотношение сторон ширины и высоты */
+@media (aspect-ratio: 1/1) {
+}
+
+@media (aspect-ratio: 4/3) {
+}
+
+@media (aspect-ratio: 16/9) {
+}
+
+@media (min-aspect-ratio: 16/9) {
+}
+
+@media (max-aspect-ratio: 16/9) {
+}

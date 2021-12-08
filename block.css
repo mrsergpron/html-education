@@ -1,0 +1,148 @@
+.container {
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  padding: 20px 20px 20px 20px;
+  border: 1px solid #ccc;
+}
+.container2 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 20px 10px 15px 7px;
+  background-color: darkseagreen;
+  box-shadow: 1px 2px 5px 7px #ccc;
+}
+
+/* Фон для блока */
+.fon {
+  background-color: #ccc;
+
+  background-image: url("img/news1.jpg");
+
+  background: url("img/news2.jpg") no-repeat top center;
+  background-size: cover / contain / 10%;
+
+  background-repeat: no-repeat;
+  background-position: top left / 100px 50px;
+
+  background: url("img/news1.jpg") no-repeat, url("img/news2.jpg") no-repeat;
+  background-position: top left, left bottom;
+  background-size: 50px 100px 30% 50%;
+
+  /* прокрутка фона */
+  background-attachment: fixed / scroll / local;
+
+  /* градиент */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  /* функция затемнение/осветление блока  sass */
+  /* 
+  &:hover {background-color: darken($bg, 10%);} 
+  &:hover {background-color: lighten($bg, 10%);}
+  */
+
+  width: 100px;
+  height: 100px;
+}
+
+/* Обрезать блок */
+.clip {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 90%, 0 80%);
+}
+
+/* Расположение блоков */
+.block {
+  display: block;
+  display: inline-block;
+  display: inline;
+  display: table-cell;
+  display: none;
+}
+/* Обтекание блоков */
+.block {
+  float: left;
+  float: right;
+}
+/* Отменить обтекание блоков */
+.block {
+  clear: left;
+  clear: right;
+  clear: both;
+}
+/* Отменить схлопывание блоков */
+.block {
+  overflow: hidden;
+}
+
+/* Позиционирование блоков */
+.block {
+  position: relative;
+  position: absolute;
+}
+.block {
+  position: sticky;
+  top: 10px;
+}
+.block {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+}
+.block {
+  z-index: 10;
+}
+
+/* Вставка пустого блока */
+.block::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* Псевдоклассы для блока однородной структуры */
+
+/* для первого блока */
+.block:first-child {
+}
+/* для последнего блоков */
+.block:last-child {
+}
+/* для четный блоков */
+.block:nth-child(odd) {
+}
+/* для нечетный блоков */
+.block:nth-child(even) {
+}
+/* для третьего блок */
+.block:nth-child(3) {
+}
+/* для первых трех блоков */
+.block:nth-child(-n + 3) {
+}
+/* для каждого третьего блока */
+.block:nth-child(3n) {
+}
+/* для 2 / 5 /8 */
+.block:nth-child(-3n + 8) {
+}
+/* для первых трех блоков */
+.block:nth-child(3) {
+}
+
+/* Псевдоклассы для блока неоднородной структуры */
+.block:first-of-type {
+}
+.block:last-of-type {
+}
